@@ -1,0 +1,908 @@
+/* Smart Inventory Manager Admin CSS */
+
+/* Product Management Styles */
+.sim-product-form {
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.sim-products-list {
+    margin-top: 20px;
+}
+
+/* Supplier Management Styles */
+.sim-supplier-form {
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.sim-suppliers-list {
+    margin-top: 20px;
+}
+
+.supplier-address {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #666;
+}
+
+.no-address {
+    color: #999;
+    font-style: italic;
+}
+
+.product-count {
+    font-weight: 600;
+    color: #0073aa;
+    margin-right: 10px;
+}
+
+.no-products {
+    color: #999;
+    font-style: italic;
+}
+
+/* Contact Information */
+.contact-info div {
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Styles */
+.sim-dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.sim-stat-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sim-stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.sim-stat-card.alert {
+    border-left: 4px solid #ffc107;
+    background: linear-gradient(135deg, #fff3cd 0%, #fff 100%);
+}
+
+.sim-stat-card.critical {
+    border-left: 4px solid #dc3545;
+    background: linear-gradient(135deg, #f8d7da 0%, #fff 100%);
+}
+
+.sim-stat-icon {
+    margin-right: 15px;
+    font-size: 2.5em;
+    color: #0073aa;
+    width: 60px;
+    text-align: center;
+}
+
+.sim-stat-card.alert .sim-stat-icon {
+    color: #ffc107;
+}
+
+.sim-stat-card.critical .sim-stat-icon {
+    color: #dc3545;
+}
+
+.sim-stat-content h3 {
+    margin: 0 0 5px 0;
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+}
+
+.sim-stat-content p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Quick Actions */
+.sim-quick-actions {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sim-quick-actions h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sim-action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sim-action-buttons .button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.sim-action-buttons .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Dashboard Sections */
+.sim-dashboard-content {
+    margin-top: 30px;
+}
+
+.sim-dashboard-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sim-dashboard-section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #0073aa;
+    padding-bottom: 10px;
+}
+
+/* Activity Types */
+.activity-type {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.activity-type.add {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.activity-type.subtract {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.activity-type.set {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Quantity Changes */
+.quantity-change {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.quantity-change.positive {
+    color: #28a745;
+}
+
+.quantity-change.negative {
+    color: #dc3545;
+}
+
+/* View More Links */
+.sim-view-more {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.sim-view-more a {
+    color: #0073aa;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sim-view-more a:hover {
+    text-decoration: underline;
+}
+
+/* Alert System Styles */
+.sim-alert-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.alert-status {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.alert-status.low-stock {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.alert-status.out-of-stock {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Alert History */
+.sim-alert-history {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Test Alert Button */
+#test-alert {
+    margin-left: 10px;
+}
+
+/* Alert Settings Form */
+.sim-alert-settings-form {
+    max-width: 600px;
+}
+
+.sim-alert-settings-form .form-table th {
+    width: 250px;
+}
+
+/* Alert Frequency Options */
+#alert_frequency {
+    min-width: 150px;
+}
+
+/* Auto Reorder Checkbox */
+#auto_reorder_enabled {
+    margin-right: 8px;
+}
+
+/* Reports & Analytics Styles */
+.sim-report-filters {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sim-report-filters select {
+    min-width: 200px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Metrics Grid */
+.sim-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.sim-metric-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sim-metric-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.metric-icon {
+    margin-right: 15px;
+    font-size: 2.5em;
+    color: #0073aa;
+    width: 60px;
+    text-align: center;
+}
+
+.metric-content h3 {
+    margin: 0 0 5px 0;
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+}
+
+.metric-content p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Charts Section */
+.sim-charts-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.sim-chart-container {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sim-chart-container h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.sim-chart-container canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reports Tables */
+.sim-reports-tables {
+    margin: 30px 0;
+}
+
+.sim-table-container {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+/* Export Section */
+.sim-export-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sim-export-section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sim-export-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sim-export-buttons .button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.sim-export-buttons .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Print Styles */
+@media print {
+    .sim-report-filters,
+    .sim-export-section,
+    .wp-admin-bar,
+    .wp-header,
+    .wp-footer {
+        display: none !important;
+    }
+    
+    .sim-metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .sim-charts-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .sim-chart-container {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    .sim-dashboard-section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
+
+/* Stock Status Indicators */
+.stock-status {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.stock-status.in-stock {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.stock-status.low-stock {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.stock-status.out-of-stock {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Quantity Display */
+.quantity-display {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Modal Styles */
+.sim-modal {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sim-modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.sim-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.sim-modal-close:hover,
+.sim-modal-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sim-modal h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-right: 30px;
+}
+
+/* Form Enhancements */
+.form-table th {
+    width: 200px;
+}
+
+.form-table input[type="text"],
+.form-table input[type="number"],
+.form-table select {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-table textarea {
+    width: 100%;
+    max-width: 400px;
+    resize: vertical;
+}
+
+/* Button Styles */
+.button.button-small {
+    margin-right: 5px;
+}
+
+.button-link-delete {
+    color: #a00 !important;
+}
+
+.button-link-delete:hover {
+    color: #dc3232 !important;
+}
+
+/* Table Enhancements */
+.wp-list-table th {
+    font-weight: 600;
+}
+
+.wp-list-table td {
+    vertical-align: middle;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+    .sim-modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+    
+    .form-table th {
+        width: 100%;
+        display: block;
+    }
+    
+    .form-table td {
+        display: block;
+        padding-left: 0;
+    }
+    
+    .form-table input[type="text"],
+    .form-table input[type="number"],
+    .form-table select,
+    .form-table textarea {
+        max-width: 100%;
+    }
+    
+    /* Dashboard Responsive */
+    .sim-dashboard-stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .sim-stat-card {
+        padding: 15px;
+    }
+    
+    .sim-stat-icon {
+        font-size: 2em;
+        width: 50px;
+    }
+    
+    .sim-stat-content h3 {
+        font-size: 1.5em;
+    }
+    
+    .sim-action-buttons {
+        flex-direction: column;
+    }
+    
+    .sim-action-buttons .button {
+        justify-content: center;
+    }
+    
+    .sim-dashboard-section {
+        padding: 15px;
+    }
+    
+    .wp-list-table {
+        font-size: 12px;
+    }
+    
+    .wp-list-table th,
+    .wp-list-table td {
+        padding: 8px 4px;
+    }
+}
+
+/* Loading States */
+.sim-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Success/Error Messages */
+.sim-notice {
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 3px;
+    border-left: 4px solid;
+}
+
+.sim-notice.success {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.sim-notice.error {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+.sim-notice.warning {
+    background-color: #fff3cd;
+    border-color: #ffc107;
+    color: #856404;
+}
+
+/* Bulk Operations Styles */
+.sim-bulk-operations {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sim-import-export-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.sim-bulk-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.sim-product-selection,
+.sim-supplier-selection {
+    margin-top: 20px;
+}
+
+.sim-selection-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.sim-selected-count {
+    font-weight: bold;
+    color: #0073aa;
+}
+
+.sim-products-grid,
+.sim-suppliers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.sim-product-item,
+.sim-supplier-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.sim-product-item:hover,
+.sim-supplier-item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-color: #0073aa;
+}
+
+.sim-product-checkbox,
+.sim-supplier-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.sim-product-checkbox input[type="checkbox"],
+.sim-supplier-checkbox input[type="checkbox"] {
+    margin: 0;
+    transform: scale(1.2);
+}
+
+.sim-product-info,
+.sim-supplier-info {
+    flex: 1;
+}
+
+.sim-product-info strong,
+.sim-supplier-info strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.sim-product-info small,
+.sim-supplier-info small {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.sim-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #f9f9f9;
+    border-radius: 8px 8px 0 0;
+}
+
+.sim-modal-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.sim-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+    background: #f9f9f9;
+    border-radius: 0 0 8px 8px;
+}
+
+.sim-form-group {
+    margin-bottom: 15px;
+}
+
+.sim-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.sim-form-group input[type="file"],
+.sim-form-group input[type="number"],
+.sim-form-group select,
+.sim-form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.sim-form-group textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.sim-import-preview {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+.sim-import-preview h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.sim-import-preview pre {
+    background: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+    font-size: 12px;
+    margin: 0;
+}
+
+.sim-warning {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.sim-warning .dashicons {
+    color: #856404;
+    font-size: 20px;
+}
+
+.sim-warning p {
+    margin: 0;
+    color: #856404;
+    font-weight: 500;
+}
+
+.button-danger {
+    background: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+.button-danger:hover {
+    background: #c82333 !important;
+    border-color: #bd2130 !important;
+}
+
+/* Responsive Design for Bulk Operations */
+@media (max-width: 768px) {
+    .sim-import-export-actions,
+    .sim-bulk-actions {
+        flex-direction: column;
+    }
+    
+    .sim-products-grid,
+    .sim-suppliers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sim-selection-controls {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+} 
