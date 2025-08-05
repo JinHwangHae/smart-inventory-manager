@@ -1,4 +1,4 @@
-# Smart Inventory Manager
+# Smart Inventory Manager(progress)
 
 A comprehensive WordPress plugin for advanced inventory management with real-time tracking, low stock alerts, supplier management, and detailed reporting.
 
